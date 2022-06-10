@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgPicture"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100sp"/>
+
+    <Button
+        android:id="@+id/btnRotateClock"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="По часовой"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFadeOut"
+        android:layout_margin="20sp"/>
+
+    <Button
+        android:id="@+id/btnRotateAntiClock"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Против часовой"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFadeIn"
+        android:layout_margin="20sp"/>
+
+    <Button
+        android:id="@+id/btnFadeIn"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Появление"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgPicture"
+        android:layout_margin="50sp"/>
+
+    <Button
+        android:id="@+id/btnFadeOut"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Исчезновение"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgPicture"
+        android:layout_margin="50sp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
